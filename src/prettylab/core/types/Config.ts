@@ -18,4 +18,20 @@ export type Config = {
       publicRoutes: Record<string, Route | ApiRoute>;
     };
   };
+  db: {
+    uri?: string;
+    connectionLimit: number;
+  };
+  mail: {
+    host?: string;
+    port?: string;
+    secure: boolean;
+    auth: {
+      user?: string;
+      pass?: string;
+    };
+    tls: {
+      rejectUnauthorized: boolean;
+    };
+  };
 };

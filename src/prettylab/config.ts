@@ -5,7 +5,7 @@ import { routes } from "@/config/routes/routes";
 import { Config } from "@prettylab/core/types/Config";
 
 const config: Config = {
-  api: { message: {}, matchMessageMeta: {}, messagePath: "status" },
+  api: { message: {}, matchMessageMeta: {}, messagePath: "message" },
   core: {
     settings: {
       cookie_name: "settings",
@@ -16,6 +16,22 @@ const config: Config = {
     routes: {
       protectedRoutes: { ...protectedRoutes, ...protectedApiRoutes },
       publicRoutes: { ...routes, ...apiRoutes },
+    },
+  },
+  db: {
+    uri: process.env.DATABASE_URL,
+    connectionLimit: 10,
+  },
+  mail: {
+    host: process.env.MAIL_HOST,
+    port: process.env.MAIL_PORT,
+    secure: false,
+    auth: {
+      user: process.env.MAIL_USER,
+      pass: process.env.MAIL_PASS,
+    },
+    tls: {
+      rejectUnauthorized: false,
     },
   },
 };

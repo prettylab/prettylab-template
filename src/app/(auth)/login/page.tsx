@@ -23,9 +23,11 @@ export default function Page() {
       JSON.stringify(data),
     );
 
-    console.log(response);
-
     setLoading(false);
+
+    if (response.success) {
+      window.location.reload();
+    }
   };
 
   return (
