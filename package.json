@@ -1,0 +1,44 @@
+{
+  "name": "prettylab-template",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev -p 4000 --turbopack",
+    "build": "next build",
+    "start": "next start -p 4000",
+    "lint": "eslint",
+    "pm2": "pm2 start npm --name prettylab -- start",
+    "pm2:stop": "pm2 stop prettylab",
+    "pm2:delete": "pm2 delete prettylab",
+    "pm2:monitor": "pm2 monit"
+  },
+  "dependencies": {
+    "@emotion/styled": "^11.14.1",
+    "@mui/icons-material": "^7.3.9",
+    "@mui/material": "^7.3.9",
+    "@mui/material-nextjs": "^7.3.9",
+    "@mui/x-date-pickers": "^8.27.2",
+    "@prisma/adapter-mariadb": "^7.4.2",
+    "@prisma/client": "^7.4.2",
+    "bcryptjs": "^3.0.3",
+    "crypto": "^1.0.1",
+    "dayjs": "^1.11.20",
+    "next": "16.2.1",
+    "notistack": "^3.0.2",
+    "react": "19.2.4",
+    "react-dom": "19.2.4",
+    "react-hook-form": "^7.72.0",
+    "react-icons": "^5.6.0"
+  },
+  "devDependencies": {
+    "@prettylab/cli": "^0.1.0",
+    "@types/node": "^20",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "eslint": "^9",
+    "eslint-config-next": "16.2.1",
+    "pm2": "^6.0.14",
+    "prettier": "^3.8.1",
+    "typescript": "^5"
+  }
+}

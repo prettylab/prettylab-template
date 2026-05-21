@@ -1,0 +1,28 @@
+services:
+  db:
+    image: mariadb:11
+    container_name: mariadb
+    restart: unless-stopped
+    environment:
+      MARIADB_ROOT_PASSWORD: ${MARIADB_ROOT_PASSWORD}
+      MARIADB_DATABASE: ${MARIADB_DATABASE}
+      MARIADB_USER: ${MARIADB_USER}
+      MARIADB_PASSWORD: ${MARIADB_PASSWORD}
+    ports:
+      - "127.0.0.1:3306:3306"
+    volumes:
+      - ./mariadb:/var/lib/mysql
+      - ./init:/docker-entrypoint-initdb.d
+      - ./backup/db:/backup
+
+  phpmyadmin:
+    image: phpmyadmin/phpmyadmin:5.2.1
+    container_name: phpmyadmin
+    restart: unless-stopped
+    environment:
+      PMA_HOST: db
+      PMA_USER: ${MARIADB_USER}
+      PMA_PASSWORD: ${MARIADB_PASSWORD}
+      UPLOAD_LIMIT: 256M
+    ports:
+      - "${PMA_PORT}:80"
