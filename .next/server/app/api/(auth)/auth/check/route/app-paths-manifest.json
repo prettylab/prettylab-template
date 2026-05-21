@@ -1,0 +1,3 @@
+{
+  "/api/(auth)/auth/check/route": "app/api/(auth)/auth/check/route.js"
+}

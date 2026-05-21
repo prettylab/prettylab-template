@@ -12,8 +12,6 @@ services:
       - "127.0.0.1:3306:3306"
     volumes:
       - ./mariadb:/var/lib/mysql
-      - ./init:/docker-entrypoint-initdb.d
-      - ./backup/db:/backup
 
   phpmyadmin:
     image: phpmyadmin/phpmyadmin:5.2.1

@@ -1,0 +1,1 @@
+{"version":3,"sources":["../../../../src/prettylab/core/utils/ssr/isServer.ts"],"sourcesContent":["export default function isServer() {\n  return typeof window === \"undefined\" && typeof document === \"undefined\";\n}\n"],"names":["isServer","document"],"mappings":"wDAAe,SAASA,EACtB,MAA4D,CAArD,GAAiC,OAAOC,QACjD,gCAD2B"}

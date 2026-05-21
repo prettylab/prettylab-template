@@ -23,3 +23,6 @@ Homestead.json
 Homestead.yaml
 Thumbs.db
 /src/generated/prisma
+docker/backup
+docker/init
+docker/mariadb
