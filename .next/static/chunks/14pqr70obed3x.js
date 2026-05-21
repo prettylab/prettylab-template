@@ -1,1 +1,0 @@
-(globalThis.TURBOPACK||(globalThis.TURBOPACK=[])).push(["object"==typeof document?document.currentScript:void 0,3314,t=>{"use strict";var e=t.i(5800);let i=async(i,a)=>{if((0,e.default)())return;let{enqueueSnackbar:o}=await t.A(80721);o(i,{variant:"default",...a})};t.s(["notify",0,i])},80721,t=>{t.v(t=>Promise.resolve().then(()=>t(50967)))}]);
