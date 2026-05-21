@@ -32,7 +32,7 @@ export default function Page() {
 
   return (
     <Flex column sx={{ p: 3 }}>
-      <Typography variant="h6">Logowanie</Typography>
+      <Typography variant="h6">Login</Typography>
       <Form form={form} onSubmit={onSubmit}>
         <Flex column sx={{ gap: 2, mt: 4, maxWidth: 400 }}>
           <InputText
@@ -45,7 +45,7 @@ export default function Page() {
           <InputText
             name={"password"}
             type="password"
-            label={"Hasło"}
+            label={"Password"}
             size="small"
             required
           />
@@ -56,7 +56,7 @@ export default function Page() {
               loading={loading}
               startIcon={<BiKey />}
             >
-              Zaloguj
+              Log in
             </Button>
           </Flex>
         </Flex>
