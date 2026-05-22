@@ -1,0 +1,55 @@
+{
+  "modules": {
+    "core": {
+      "remote": "https://github.com/prettylab/core.git",
+      "branch": "main",
+      "prefix": "prettylab/core"
+    },
+    "form": {
+      "remote": "https://github.com/prettylab/form.git",
+      "branch": "main",
+      "prefix": "prettylab/form"
+    },
+    "api": {
+      "remote": "https://github.com/prettylab/api.git",
+      "branch": "main",
+      "prefix": "prettylab/api"
+    },
+    "db": {
+      "remote": "https://github.com/prettylab/db.git",
+      "branch": "main",
+      "prefix": "prettylab/db"
+    },
+    "pdf": {
+      "remote": "https://github.com/prettylab/pdf.git",
+      "branch": "main",
+      "prefix": "prettylab/pdf"
+    },
+    "notify": {
+      "remote": "https://github.com/prettylab/notify.git",
+      "branch": "main",
+      "prefix": "prettylab/notify"
+    },
+    "mail": {
+      "remote": "https://github.com/prettylab/mail.git",
+      "branch": "main",
+      "prefix": "prettylab/mail"
+    },
+    "layout": {
+      "remote": "https://github.com/prettylab/layout.git",
+      "branch": "main",
+      "prefix": "prettylab/layout"
+    },
+    "encryption": {
+      "remote": "https://github.com/prettylab/encryption.git",
+      "branch": "main",
+      "prefix": "prettylab/encryption"
+    },
+    "animation": {
+      "remote": "https://github.com/prettylab/animation.git",
+      "branch": "main",
+      "prefix": "prettylab/animation"
+    }
+  },
+  "defaultBranch": "main"
+}
